@@ -15,8 +15,8 @@ local sunrise;
 local sunrisetime;
 
 while true do
-  sunsettime  = os.date("%H:%M", os.time()-margin * 60);
-  sunrisetime = os.date("%H:%M", os.time()+margin * 60);
+  sunsettime  = os.date("%H:%M", os.time()+margin * 60);
+  sunrisetime = os.date("%H:%M", os.time()-margin * 60);
   
   sunset  = fibaro:getValue(1, "sunsetHour");
   sunrise = fibaro:getValue(1, "sunriseHour");
